@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área dos Funcionários - Solaris Residence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-employee">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">☀️</span>
+                <span class="brand-name">Funcionários - Solaris</span>
+            </div>
+            <button onclick="logout()" class="btn-logout">Sair</button>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="container">
+            <h1>Área dos Funcionários</h1>
+            <p>Visualização e gerenciamento de reservas</p>
+
+            <div class="employee-section">
+                <h2>Reservas do Dia</h2>
+                <div id="employee-bookings" class="bookings-table">
+                    <!-- Reservas carregadas via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            loadEmployeeBookings();
+        });
+    </script>
+</body>
+</html>

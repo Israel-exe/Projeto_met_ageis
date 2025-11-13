@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quartos - Solaris Residence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">☀️</span>
+                <span class="brand-name">Solaris Residence</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html" class="active">Quartos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+                <li><a href="carrinho.html" class="cart-icon">🛒 <span id="cart-count">0</span></a></li>
+            </ul>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Nossos Quartos</h1>
+            <p>Escolha a acomodação perfeita para sua estadia</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <div id="products-grid" class="products-grid">
+                <!-- Os produtos serão carregados via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Solaris Residence. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Carregar produtos
+        window.addEventListener('DOMContentLoaded', function() {
+            loadProducts();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin - Solaris Residence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-admin">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">☀️</span>
+                <span class="brand-name">Admin Dashboard</span>
+            </div>
+            <button onclick="logout()" class="btn-logout">Sair</button>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="container">
+            <h1>Painel Administrativo</h1>
+            
+            <div class="stats-grid">
+                <div class="stat-card stat-revenue">
+                    <h3>Lucro Mensal</h3>
+                    <p class="stat-value" id="monthly-revenue">R$ 0,00</p>
+                    <small>Mês atual</small>
+                </div>
+                <div class="stat-card stat-bookings">
+                    <h3>Total de Reservas</h3>
+                    <p class="stat-value" id="total-bookings">0</p>
+                    <small>Todas as reservas</small>
+                </div>
+                <div class="stat-card stat-active">
+                    <h3>Reservas Ativas</h3>
+                    <p class="stat-value" id="active-bookings">0</p>
+                    <small>Em andamento</small>
+                </div>
+            </div>
+
+            <div class="admin-section">
+                <h2>Gerenciar Reservas</h2>
+                <div id="admin-bookings" class="bookings-table">
+                    <!-- Tabela de reservas carregada via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            checkAdminAuth();
+            loadAdminDashboard();
+        });
+    </script>
+</body>
+</html>

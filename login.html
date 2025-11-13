@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Solaris Residence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">☀️</span>
+                <span class="brand-name">Solaris Residence</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Quartos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html" class="btn-login active">Login</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </nav>
+
+    <section class="login-section">
+        <div class="login-container">
+            <div class="login-box">
+                <h1>Login de Cliente</h1>
+                <p>Acesse sua conta para gerenciar suas reservas</p>
+                
+                <form id="login-form" onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" required placeholder="••••••••">
+                    </div>
+                    <button type="submit" class="btn-primary btn-block">Entrar</button>
+                </form>
+
+                <div class="login-footer">
+                    <p>Não tem uma conta? Faça sua primeira reserva para criar uma!</p>
+                    <a href="admin-login.html">Acesso para Administradores</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Solaris Residence. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

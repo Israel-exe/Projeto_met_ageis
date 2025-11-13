@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solaris Residence - Hotel de Luxo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">☀️</span>
+                <span class="brand-name">Solaris Residence</span>
+            </div>
+            <!-- Adicionando ID ao menu para controle JavaScript -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="produtos.html">Quartos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+                <li><a href="carrinho.html" class="cart-icon">🛒 <span id="cart-count">0</span></a></li>
+            </ul>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&h=600&fit=crop" alt="Solaris Residence">
+        <div class="hero-content">
+            <h1>Bem-vindo ao Solaris Residence</h1>
+            <p>Experiência de luxo e conforto incomparável</p>
+            <a href="produtos.html" class="btn-primary">Reserve Agora</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Por que escolher o Solaris?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏨</div>
+                    <h3>Quartos de Luxo</h3>
+                    <p>Acomodações elegantes com vista panorâmica</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍽️</div>
+                    <h3>Gastronomia Premium</h3>
+                    <p>Restaurante com chefs renomados</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💆</div>
+                    <h3>Spa & Wellness</h3>
+                    <p>Centro de bem-estar completo</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏊</div>
+                    <h3>Piscina Aquecida</h3>
+                    <p>Área de lazer com vista espetacular</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Reserve sua estadia hoje</h2>
+            <p>Desfrute de uma experiência inesquecível no Solaris Residence</p>
+            <a href="produtos.html" class="btn-primary">Ver Quartos Disponíveis</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Solaris Residence. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

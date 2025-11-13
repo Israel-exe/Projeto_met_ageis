@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprovante - Solaris Residence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">☀️</span>
+                <span class="brand-name">Solaris Residence</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cliente-dashboard.html">Minhas Reservas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>✓ Reserva Confirmada!</h1>
+            <p>Sua reserva foi realizada com sucesso</p>
+        </div>
+    </section>
+
+    <section class="receipt-section">
+        <div class="container">
+            <div id="receipt-content" class="receipt-box">
+                <!-- O comprovante será carregado via JavaScript -->
+            </div>
+            <div class="receipt-actions">
+                <button onclick="window.print()" class="btn-primary">Imprimir Comprovante</button>
+                <a href="cliente-dashboard.html" class="btn-secondary">Ver Minhas Reservas</a>
+                <a href="index.html" class="btn-secondary">Voltar ao Início</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Solaris Residence. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            loadReceipt();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Funcionários - Solaris Residence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-employee">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">☀️</span>
+                <span class="brand-name">Solaris Residence - Funcionários</span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="login-section">
+        <div class="login-container">
+            <div class="login-box employee-login">
+                <h1>Login de Funcionários</h1>
+                <p>Acesso para equipe do hotel</p>
+                
+                <form id="employee-login-form" onsubmit="handleEmployeeLogin(event)">
+                    <div class="form-group">
+                        <label for="username">Usuário</label>
+                        <input type="text" id="username" name="username" required placeholder="funcionario">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" required placeholder="••••••••">
+                    </div>
+                    <button type="submit" class="btn-primary btn-block">Entrar como Funcionário</button>
+                </form>
+
+                <div class="login-footer">
+                    <a href="admin-login.html">Acesso Administrativo</a> | 
+                    <a href="login.html">Login de Clientes</a>
+                </div>
+
+                <div class="demo-credentials">
+                    <p><strong>Credenciais de Demonstração:</strong></p>
+                    <p>Usuário: <code>funcionario</code> | Senha: <code>func123</code></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

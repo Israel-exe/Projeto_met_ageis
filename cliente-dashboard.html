@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Reservas - Solaris Residence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">☀️</span>
+                <span class="brand-name">Solaris Residence</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cliente-dashboard.html" class="active">Minhas Reservas</a></li>
+                <li><button onclick="logout()" class="btn-logout">Sair</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Minhas Reservas</h1>
+            <p>Gerencie suas reservas no Solaris Residence</p>
+        </div>
+    </section>
+
+    <section class="dashboard">
+        <div class="container">
+            <div id="client-bookings" class="client-bookings">
+                <!-- Reservas do cliente carregadas via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Solaris Residence. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            checkClientAuth();
+            loadClientBookings();
+        });
+    </script>
+</body>
+</html>

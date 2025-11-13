@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Admin - Solaris Residence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-admin">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">☀️</span>
+                <span class="brand-name">Solaris Residence - Admin</span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="login-section">
+        <div class="login-container">
+            <div class="login-box admin-login">
+                <h1>Login Administrativo</h1>
+                <p>Acesso restrito a administradores</p>
+                
+                <form id="admin-login-form" onsubmit="handleAdminLogin(event)">
+                    <div class="form-group">
+                        <label for="username">Usuário</label>
+                        <input type="text" id="username" name="username" required placeholder="admin">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" required placeholder="••••••••">
+                    </div>
+                    <button type="submit" class="btn-primary btn-block">Entrar como Admin</button>
+                </form>
+
+                <div class="login-footer">
+                    <a href="funcionarios-login.html">Acesso para Funcionários</a> | 
+                    <a href="login.html">Login de Clientes</a>
+                </div>
+
+                <div class="demo-credentials">
+                    <p><strong>Credenciais de Demonstração:</strong></p>
+                    <p>Usuário: <code>admin</code> | Senha: <code>admin123</code></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

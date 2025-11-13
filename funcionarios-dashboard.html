@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Funcionários - Solaris Residence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="checkEmployeeAuth(); loadEmployeeBookings();">
+    <nav class="navbar navbar-employee">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">☀️</span>
+                <span class="brand-name">Solaris Residence - Funcionários</span>
+            </div>
+            <div class="nav-menu">
+                <a href="funcionarios-dashboard.html" class="nav-link active">Reservas</a>
+                <a href="#" onclick="logout()" class="nav-link">Sair</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="dashboard-section">
+        <div class="container">
+            <div class="dashboard-header">
+                <h1>Painel de Funcionários</h1>
+                <p>Visualize as reservas ativas do hotel</p>
+            </div>
+
+            <div class="dashboard-content">
+                <div id="employee-bookings"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Solaris Residence. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

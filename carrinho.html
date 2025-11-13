@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Solaris Residence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">☀️</span>
+                <span class="brand-name">Solaris Residence</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Quartos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+                <li><a href="carrinho.html" class="cart-icon active">🛒 <span id="cart-count">0</span></a></li>
+            </ul>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Meu Carrinho</h1>
+            <p>Revise suas reservas antes de finalizar</p>
+        </div>
+    </section>
+
+    <section class="cart-section">
+        <div class="container">
+            <div id="cart-content" class="cart-content">
+                <!-- O conteúdo do carrinho será carregado via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Solaris Residence. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            loadCart();
+        });
+    </script>
+</body>
+</html>
